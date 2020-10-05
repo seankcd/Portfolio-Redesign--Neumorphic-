@@ -1,0 +1,23 @@
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__header {
+        @include neu( $white-dark, false, topleft, false );
+        padding: 0 1rem;
+    }
+
+    &__sub-header {
+        margin-bottom: 1em;
+        font-family: $roboto;
+    }
+
+    &__text {
+        max-width: 50%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}

@@ -19,6 +19,14 @@ h1, h2, h3, h4 {
     font-family: $poppins;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
 //Forms - Test placeholders change this 
 input {
     @include neu( $white-dark, false, topcenter, true );
