@@ -37,11 +37,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.3em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 input {
@@ -164,7 +164,7 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover {
-  color: #767676;
+  color: darkgray;
 }
 
 nav .burger {
@@ -279,7 +279,7 @@ nav .burger .line-2 {
 }
 
 .hero__sub-header {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
 }
 
