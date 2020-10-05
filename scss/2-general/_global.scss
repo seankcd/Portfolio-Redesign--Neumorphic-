@@ -8,3 +8,25 @@ body {
 h1 {
     font-family: $poppins;
 }
+
+//Forms - Test placeholders change this 
+input {
+    @include neu( $white-dark, false, topcenter, true );
+    transition: $trans-neu;
+	border: none;
+	padding: 1em 2em;
+	background: transparent;
+	margin: 0 1.5em;
+	color: darken($white-dark, 35);
+	text-shadow: 1px 1px rgba(#fff,.6);
+	
+	&::placeholder {
+		color: darken($white-dark,45);
+		text-shadow: 1px 1px rgba(#fff,.6);
+	}
+	
+	&:focus {
+		outline: none;
+		color: darken($white-dark,55);
+	}
+}

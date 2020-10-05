@@ -26,53 +26,71 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-[class*="btn"] {
-  transition: box-shadow .3s ease, color .3s ease;
-  display: inline-block;
+input {
   border-radius: 0.8rem;
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  border: none;
+  padding: 1em 2em;
+  background: transparent;
+  margin: 0 1.5em;
+  color: #8192a2;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+input::placeholder {
+  color: #66788a;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+  outline: none;
+  color: #515f6d;
+}
+
+[class*="btn"] {
+  border-radius: 0.8rem;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  display: inline-block;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
   margin: 1rem 1em;
   padding: 0.8rem 1.8rem;
 }
 
-.btn-blue {
-  border-radius: 0.8rem;
-  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
+[class*="btn"]:hover {
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
+}
+
+[class*="btn"]:hover {
+  color: #767676;
+}
+
+.btn--blue {
   color: #00AFEF;
 }
 
-.btn-blue:hover {
-  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
-}
-
-.btn-blue:hover {
+.btn--blue:hover {
   color: #0077a3;
 }
 
-.btn-black {
-  border-radius: 0.8rem;
-  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
-  color: #363636;
+.btn--orange {
+  color: #F9581B;
 }
 
-.btn-black:hover {
-  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
+.btn--orange:hover {
+  color: #c23905;
 }
 
-.btn-black:hover {
-  color: #5c5c5c;
-}
-
-.btn-black-far {
+.btn--deep {
   border-radius: 0.8rem;
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.7), 10px 10px 15px #c5ccd4, inset -10px -10px 30px rgba(255, 255, 255, 0.1), inset 10px 10px 30px #e8ebee;
 }
 
-.btn-black-far:hover {
+.btn--deep:hover {
   box-shadow: -10px -10px 25px rgba(255, 255, 255, 0.2), 10px 10px 15px #e8ebee, inset -10px -10px 30px rgba(255, 255, 255, 0.6), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 15px #cbd2d8;
 }
 
