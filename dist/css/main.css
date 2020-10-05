@@ -32,7 +32,7 @@ a:hover {
   transition: all 200ms ease-in;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -69,6 +69,7 @@ input:focus {
   text-transform: uppercase;
   margin: 1rem 1em;
   padding: 0.8rem 1.8rem;
+  color: #363636;
 }
 
 [class*="btn"]:hover {
@@ -149,8 +150,13 @@ nav .nav-links li:last-child {
 }
 
 nav .nav-links a {
-  font-size: 1.1rem;
   font-weight: 600;
+  text-transform: uppercase;
+  color: #363636;
+}
+
+nav .nav-links a:hover {
+  color: #767676;
 }
 
 nav .burger {
