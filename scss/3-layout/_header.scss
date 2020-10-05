@@ -1,0 +1,145 @@
+nav {
+    display: flex;
+    justify-content: space-between; //Was space-around but it messed with the spacing
+    align-items: center;
+    min-height: 12vh;
+    line-height: 1.6;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .logo {
+        font-size: 2.2rem;
+        z-index: 2;
+
+        a {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            margin-right: 0.7rem;
+        }
+
+        span {
+            letter-spacing: -3.5px;
+            color: $blue;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+
+        .line-1,
+        .line-2,
+        .line-3 {
+        width: 25px;
+        height: 2.3px;
+        margin: 0.3rem;
+        border-radius: 8px;
+        background-color: $blue;
+        transition: all 0.3s ease;
+        }
+
+        .line-2 {
+            width: 20px;
+        }
+    }   
+}
+
+@media screen and (max-width: $resp-phone) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        min-height: 10vh;
+
+        .nav-links {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background: rgba($white-dark, 0.95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform-origin: right;
+            transform: scaleX(0); //Was transform: translateX(100%); but had issues with iphone
+            transition: transform 0.3s ease-in;
+
+            li {
+                margin: 2rem 0 0;
+                opacity: 0;
+
+                a {
+                    font-size: 2rem;
+                }
+            }
+
+            .btn {
+                font-size: 1.5rem;
+                margin-top: 3rem;
+            }
+        }
+
+        .burger {
+            display: block;
+            z-index: 1;
+        }
+
+        .nav-active {
+            transform: scaleX(1); //Was transform: translateX(0%); but had issues with iphone
+        }
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: $trans-1;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: $trans-1;
+    }
+}
+
+//Buger menu animation
+.toggle .line-1 {
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+
+.toggle .line-2 {
+    opacity: 0;
+}
+
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-5px,-5px);
+}

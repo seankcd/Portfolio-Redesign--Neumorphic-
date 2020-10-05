@@ -5,6 +5,16 @@ body {
     color: $black-light;
 }
 
+a {
+    color: $blue;
+    transition: $trans-1;
+
+    &:hover {
+        color: darken($blue, 15);
+        transition: $trans-1;
+    }
+}
+
 h1 {
     font-family: $poppins;
 }
