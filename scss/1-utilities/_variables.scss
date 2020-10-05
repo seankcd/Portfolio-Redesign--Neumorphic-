@@ -15,7 +15,8 @@ $roboto: 'Roboto', sans-serif;
 $max-width: 1300px;
 $trans-1: all 200ms ease-in;
 $trans-neu: box-shadow .3s ease, color .3s ease;
-$shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+$border-radius: 0.6rem;
+$shadow: 6px 6px 24px rgba(0, 0, 0, 0.25);
 $shadow-filter: drop-shadow(2.5px 2.5px 8px $gray);
 
 //-Media Queries

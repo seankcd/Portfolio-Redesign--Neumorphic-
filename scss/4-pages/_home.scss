@@ -31,3 +31,34 @@
         margin-bottom: 1em;
     }
 }
+
+.mywork {
+    height: 500px;
+
+    // &__header {
+    //     @include neu-text( $white-dark, false, topleft, false );
+    //     color: $white-dark;
+
+    //     // @include neu( $white-dark, false, topleft, true );
+    //     // color: $black-light;
+    //     // padding: 0 1rem 0;
+    //     // display: inline;
+
+    //     // WATERMARK - not sure if I should keep it. needs work also
+    //     // &::before {
+    //     //     content: 'Myssss Work';
+    //     //     color: $black-light;
+    //     //     position: absolute;
+    //     //     z-index: -1;
+    //     //     left: 0;
+    //     //     opacity: 0.3;
+    //     //     background: none;
+    //     //     font-size: 15rem;
+
+    //     // }
+    // }
+
+    &__card {
+        @include neu( $white-dark, false, topleft, false );
+    }
+}

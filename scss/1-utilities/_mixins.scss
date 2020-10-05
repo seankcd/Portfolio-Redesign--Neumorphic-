@@ -6,7 +6,7 @@
 		$inset: false, 
 		$distance: 2px 
 	) {
-    border-radius: 0.8rem;
+    border-radius: $border-radius;
 	$v: 2px;
 	
 	@if $distance {
@@ -43,5 +43,35 @@
 				box-shadow: $in;
 			}
 		}
+	}
+}
+
+@mixin neu-text( 
+		$white-dark, 
+		$hover: false, 
+		$direction: topleft, 
+		$inset: false, 
+		$distance: 2px 
+	) {
+	$v: 2px;
+	
+	@if $distance {
+		$v: $distance;		
+	}
+
+	$topX: ($v*2*-1);
+	$topY: ($v*2*-1);
+		
+	$out: $topX $topY ($v*3) rgba(#fff,.9),
+		  $topX*-1 $topY*-1 ($v*3) darken($white-dark,18);
+
+	$in: $topX $topY ($v*5) rgba(#fff,.2),
+		 $topX*-1 $topY*-1 ($v*3) darken($white-dark,0);
+		
+	@if $inset {
+		text-shadow: $in;
+	}
+	@else {
+		text-shadow: $out;
 	}
 }
