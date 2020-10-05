@@ -1,0 +1,34 @@
+[class*="btn"] {
+	transition: box-shadow .3s ease, color .3s ease;
+	display: inline-block;
+	border-radius: 0.8rem;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-shadow: 1px 1px rgba(#fff, .6);
+	margin: 1rem 1em;
+	padding: 0.8rem 1.8rem;
+}
+
+.btn-blue {
+    @include neustyle( $white-dark, true );
+    color: $blue;
+    
+    &:hover {
+		color: darken($blue, 15);
+	}
+}
+
+.btn-black {
+    @include neustyle( $white-dark, true );
+    color: $black-light;
+    
+    &:hover {
+		color: lighten($black-light, 15);
+	}
+}
+
+.btn-black-far {
+	@include neustyle( $white-dark, true, topleft, false, 5px ); //(color, hover true or false, location(Only have top left), true=in false=out, size of the shadow - default is 2px)
+}

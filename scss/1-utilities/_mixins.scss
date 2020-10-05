@@ -1,0 +1,47 @@
+// Neumorphic Mixin
+@mixin neustyle( 
+		$white-dark, 
+		$hover: false, 
+		$direction: topleft, 
+		$inset: false, 
+		$distance: 2px 
+	) {
+    border-radius: 0.8rem;
+	$v: 2px;
+	
+	@if $distance {
+		$v: $distance;		
+	}
+
+	$topX: ($v*2*-1);
+	$topY: ($v*2*-1);
+		
+	$out: $topX $topY ($v*3) rgba(#fff,.7),
+		  $topX*-1 $topY*-1 ($v*3) darken($white-dark,12),
+		  inset $topX $topY ($v*6) rgba(#fff,.1),
+		  inset $topX*-1 $topY*-1 ($v*6) darken($white-dark,0);
+
+	$in: $topX $topY ($v*5) rgba(#fff,.2),
+		 $topX*-1 $topY*-1 ($v*3) darken($white-dark,0),
+		 inset $topX $topY ($v*6) rgba(#fff,.6),
+	     inset $topX/2 $topY/2 ($v) rgba(#fff,.2),
+		 inset $topX*-1 $topY*-1 ($v*3) darken($white-dark,10);
+		
+	@if $inset {
+		box-shadow: $in;
+	}
+	@else {
+		box-shadow: $out;
+	}
+		
+	@if $hover {
+		&:hover {
+			@if $inset {
+				box-shadow: $out;
+			}
+			@else {
+				box-shadow: $in;
+			}
+		}
+	}
+}
