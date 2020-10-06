@@ -50,9 +50,10 @@ nav {
     }
 
     .burger {
+        @include neu( $white-dark, true, topleft, false );
+        transition: $trans-neu;
         display: none;
         cursor: pointer;
-        @include neu( $white-dark, true, topleft, false );
         padding: 0.2rem;
 
         .line-1,

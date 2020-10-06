@@ -7,7 +7,7 @@
     margin-top: -5rem;
 
     &__header {
-        @include neu( $white-dark, false, topleft, false );
+        @include neu( $white-dark, false, topleft, true );
         padding: 0 1rem;
 
         // &::before {
@@ -37,11 +37,13 @@
     }
 }
 
+//
+//My Work
+//
 .mywork {
 
-
     &__card {
-        @include neu( $white-dark, false, topleft, false );
+        @include neu( $white-dark, false, topleft, true );
         padding: 2rem;
         display: grid;
         grid-template-columns: 1.2fr 1fr;
@@ -51,7 +53,7 @@
             width: 100%;
             height: auto;
             border-radius: $border-radius;
-            box-shadow: $shadow;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
         }
 
         &-desc {
@@ -90,8 +92,28 @@
     }
 }
 
+//
+//About Me
+//
+.aboutme {
+    display: flex;
+    justify-content: center;
+
+    img {
+        border-radius: 50%;
+        max-width: 250px;
+        box-shadow: $shadow;
+    }
+}
+
+//
 //Media Queries
+//
 @media screen and (max-width: $resp-tablet) {
+    .hero {
+        margin-top: 0;
+    }
+
     .mywork {
 
         &__card {
