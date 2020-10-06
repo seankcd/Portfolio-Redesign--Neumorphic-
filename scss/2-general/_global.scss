@@ -4,6 +4,7 @@ body {
     background: $white-dark;
     color: $black-light;
     max-width: $max-width;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -27,6 +28,10 @@ h1 {
 
 h2 {
     font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 //Forms - Test placeholders change this 
