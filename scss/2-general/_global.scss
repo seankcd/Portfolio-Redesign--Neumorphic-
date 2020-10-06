@@ -34,6 +34,21 @@ h3 {
     font-size: 1.8rem;
 }
 
+h4 {
+    font-size: 1.2rem;
+}
+
+//
+//Text Utility Classes
+.text-center {
+    text-align: center;
+}
+
+.text-small {
+    font-size: 0.8rem;
+    color: $gray;
+}
+
 //Forms - Test placeholders change this 
 input {
     @include neu( $white-dark, false, topcenter, true );

@@ -1,3 +1,6 @@
+//
+//Hero
+//
 .hero {
     height: 100vh;
     display: flex;
@@ -41,6 +44,7 @@
 //My Work
 //
 .mywork {
+    margin-bottom: 10rem;
 
     &__card {
         @include neu( $white-dark, false, topleft, true );
@@ -97,12 +101,64 @@
 //
 .aboutme {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
 
-    img {
+    &__me {
         border-radius: 50%;
         max-width: 250px;
         box-shadow: $shadow;
+        margin-bottom: 4rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        margin-bottom: 4rem;
+
+        &-info-social {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+
+            a {
+                @include neu( $white-dark, true, topleft, false );
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img {
+                filter: $shadow-filter;
+            }
+        }
+
+        &-skills {
+            
+            h4 {
+                margin-bottom: 2rem;
+            }
+
+            img {
+                width: 70px;
+                filter: $shadow-filter;
+            }
+
+            &-languages {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+            }
+
+            &-software {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
 }
 

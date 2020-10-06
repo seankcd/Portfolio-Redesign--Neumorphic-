@@ -51,6 +51,19 @@ h3 {
   font-size: 1.8rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: 0.8rem;
+  color: #8A8A8A;
+}
+
 input {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
@@ -81,7 +94,7 @@ input:focus {
   text-align: center;
   font-weight: bold;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 0.7rem 0.7rem;
   color: #363636;
 }
@@ -306,6 +319,10 @@ nav .burger .line-2 {
   margin: 0 2rem;
 }
 
+.mywork {
+  margin-bottom: 10rem;
+}
+
 .mywork__card {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
@@ -358,13 +375,67 @@ nav .burger .line-2 {
 
 .aboutme {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
 }
 
-.aboutme img {
+.aboutme__me {
   border-radius: 50%;
   max-width: 250px;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
+}
+
+.aboutme__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.aboutme__container-info-social {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.aboutme__container-info-social a {
+  border-radius: 0.6rem;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutme__container-info-social a:hover {
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
+}
+
+.aboutme__container-info-social img {
+  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.16));
+}
+
+.aboutme__container-skills h4 {
+  margin-bottom: 2rem;
+}
+
+.aboutme__container-skills img {
+  width: 70px;
+  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.16));
+}
+
+.aboutme__container-skills-languages {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.aboutme__container-skills-software {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 950px) {
