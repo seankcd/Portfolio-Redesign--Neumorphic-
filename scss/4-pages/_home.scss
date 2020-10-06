@@ -29,7 +29,7 @@
     &__text {
         max-width: 50%;
         text-align: center;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 
     &__buttons a {
@@ -42,17 +42,20 @@
 
     &__card {
         @include neu( $white-dark, false, topleft, false );
-        padding: 1.5rem;
-        display: flex;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        margin-bottom: 4rem;
 
         &-img {
-            max-width: auto;
-            height: 300px;
+            width: 100%;
+            height: auto;
             border-radius: $border-radius;
+            box-shadow: $shadow;
         }
 
         &-desc {
-            margin-left: 1.5rem;
+            margin-left: 2rem;
 
             &-header {
                 margin: -0.8rem 0 0.5rem 0;
@@ -74,13 +77,41 @@
             }
 
             &-icon {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: auto;
+                filter: $shadow-filter;
                 margin-right: 1rem;
             }
 
             &-buttons a {
                 margin-right: 1rem;
+            }
+        }
+    }
+}
+
+//Media Queries
+@media screen and (max-width: $resp-tablet) {
+    .mywork {
+
+        &__card {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            padding: 0;
+
+            &-img {
+                margin-bottom: 2rem;
+                border-radius: 0.6rem 0.6rem 0 0;
+            }
+
+            &-desc {
+                margin: 0 2rem;
+
+                &-buttons {
+                    margin-bottom: 2rem;
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
     }
