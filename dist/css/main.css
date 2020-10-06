@@ -438,6 +438,14 @@ nav .burger .line-2 {
   justify-content: space-between;
 }
 
+.aboutme__resume h4 {
+  margin-bottom: 2rem;
+}
+
+.aboutme__resume-btn {
+  margin: 0 2rem;
+}
+
 @media screen and (max-width: 950px) {
   .hero {
     margin-top: 0;
