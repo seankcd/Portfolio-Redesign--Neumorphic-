@@ -123,6 +123,36 @@ input:focus {
   color: #c23905;
 }
 
+.btn--blue-gradient {
+  border-radius: 0.6rem;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #60baee;
+  color: #fff;
+  background-image: linear-gradient(45deg, #00AFEF 0%, #00cbef 50%, #00e7ef 100%);
+}
+
+.btn--blue-gradient:hover {
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.7), inset -2px -2px 2px rgba(255, 255, 255, 0.5), inset 4px 4px 6px #0095cb;
+}
+
+.btn--blue-gradient:hover {
+  color: #E8EBEE;
+}
+
+.btn--orange-gradient {
+  border-radius: 0.6rem;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #f9581b;
+  color: #fff;
+  background-image: linear-gradient(45deg, #F9581B 0%, #f91b82 100%);
+}
+
+.btn--orange-gradient:hover {
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.5), inset -2px -2px 2px rgba(255, 255, 255, 0.3), inset 4px 4px 6px #cc3c05;
+}
+
+.btn--orange-gradient:hover {
+  color: #E8EBEE;
+}
+
 .btn--deep {
   border-radius: 0.6rem;
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.7), 10px 10px 15px #c5ccd4, inset -10px -10px 30px rgba(255, 255, 255, 0.1), inset 10px 10px 30px #e8ebee;
@@ -132,7 +162,7 @@ input:focus {
   box-shadow: -10px -10px 25px rgba(255, 255, 255, 0.2), 10px 10px 15px #e8ebee, inset -10px -10px 30px rgba(255, 255, 255, 0.6), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 15px #cbd2d8;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,50 +171,50 @@ nav {
   margin: 0 auto;
 }
 
-nav .logo {
+header .logo {
   font-size: 2.2rem;
   z-index: 2;
 }
 
-nav .logo a {
+header .logo a {
   display: flex;
   justify-content: center;
 }
 
-nav .logo img {
+header .logo img {
   margin-right: 0.7rem;
 }
 
-nav .logo span {
+header .logo span {
   letter-spacing: -3.5px;
   color: #00AFEF;
 }
 
-nav .nav-links {
+header .nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav .nav-links li {
+header .nav-links li {
   margin-right: 2rem;
 }
 
-nav .nav-links li:last-child {
+header .nav-links li:last-child {
   margin-right: 0;
 }
 
-nav .nav-links a {
+header .nav-links a {
   font-weight: 600;
   text-transform: uppercase;
   color: #363636;
 }
 
-nav .nav-links a:hover {
+header .nav-links a:hover {
   color: darkgray;
 }
 
-nav .burger {
+header .burger {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
   transition: box-shadow 0.3s ease, color 0.3s ease;
@@ -193,13 +223,13 @@ nav .burger {
   padding: 0.2rem;
 }
 
-nav .burger:hover {
+header .burger:hover {
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
 }
 
-nav .burger .line-1,
-nav .burger .line-2,
-nav .burger .line-3 {
+header .burger .line-1,
+header .burger .line-2,
+header .burger .line-3 {
   width: 25px;
   height: 0.2rem;
   margin: 0.3rem;
@@ -208,7 +238,7 @@ nav .burger .line-3 {
   transition: all 0.3s ease;
 }
 
-nav .burger .line-2 {
+header .burger .line-2 {
   width: 20px;
 }
 
@@ -226,11 +256,11 @@ nav .burger .line-2 {
     top: 0;
     left: 0;
     height: 100vh;
-    background: rgba(232, 235, 238, 0.95);
+    width: 100%;
+    background: #e8ebee;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.3s ease-in;
@@ -287,6 +317,48 @@ nav .burger .line-2 {
   height: 200px;
   padding: 2rem;
   margin: 2rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer__links li {
+  margin-right: 2rem;
+}
+
+.footer__links li:last-child {
+  margin-right: 0;
+}
+
+.footer__links a {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #363636;
+}
+
+.footer__links a:hover {
+  color: darkgray;
+}
+
+.footer__copyright {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  color: #8A8A8A;
 }
 
 .hero {
@@ -377,13 +449,14 @@ nav .burger .line-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .aboutme__me {
+  border-radius: 0.6rem;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
   border-radius: 50%;
   max-width: 250px;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
   margin-bottom: 4rem;
 }
 

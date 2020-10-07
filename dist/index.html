@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Header/Nav -->
-    <nav>
+    <header id="navbar">
         <div class="logo">
             <a href="index.html">
                 <svg width="129" height="127" viewBox="0 0 129 127"><defs><filter id="a" x="12" y="12" width="115" height="115" filterUnits="userSpaceOnUse"><feOffset dx="6" dy="6" input="SourceAlpha"/><feGaussianBlur stdDeviation="5" result="b"/><feFlood flood-opacity="0.2"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter><filter id="c" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse"><feOffset dx="-6" dy="-6" input="SourceAlpha"/><feGaussianBlur stdDeviation="5" result="d"/><feFlood flood-color="#fff" flood-opacity="0.702"/><feComposite operator="in" in2="d"/><feComposite in="SourceGraphic"/></filter><filter id="e" x="65" y="18" width="64" height="101" filterUnits="userSpaceOnUse"><feOffset dy="5" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="f"/><feFlood flood-color="#2a2a2a" flood-opacity="0.239"/><feComposite operator="in" in2="f"/><feComposite in="SourceGraphic"/></filter><filter id="g" x="36" y="18" width="64" height="101" filterUnits="userSpaceOnUse"><feOffset dx="2" dy="5" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="h"/><feFlood flood-color="#2a2a2a" flood-opacity="0.239"/><feComposite operator="in" in2="h"/><feComposite in="SourceGraphic"/></filter><filter id="i" x="3" y="18" width="62" height="101" filterUnits="userSpaceOnUse"><feOffset dx="4" dy="5" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="j"/><feFlood flood-color="#2a2a2a" flood-opacity="0.239"/><feComposite operator="in" in2="j"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(5.669 4.946)"><g transform="translate(15.331 16.054)"><g transform="matrix(1, 0, 0, 1, -21, -21)" filter="url(#a)"><rect width="85" height="85" rx="12" transform="translate(21 21)" fill="#e8ebee"/></g><g transform="matrix(1, 0, 0, 1, -21, -21)" filter="url(#c)"><rect width="85" height="85" rx="12" transform="translate(21 21)" fill="#e8ebee"/></g></g><g transform="matrix(1, 0, 0, 1, -5.67, -4.95)" filter="url(#e)"><text transform="translate(75 87)" fill="#00afef" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="67" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="-0.098em"><tspan x="0" y="0">C</tspan></text></g><g transform="matrix(1, 0, 0, 1, -5.67, -4.95)" filter="url(#g)"><text transform="translate(44 87)" fill="#00afef" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="67" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="-0.098em"><tspan x="0" y="0">K</tspan></text></g><g transform="matrix(1, 0, 0, 1, -5.67, -4.95)" filter="url(#i)"><text transform="translate(9 87)" fill="#00afef" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="67" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="-0.098em"><tspan x="0" y="0">S</tspan></text></g></g></svg>
@@ -16,8 +16,8 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="mywork.html">My Work</a></li>
+            <li><a href="#mywork">My Work</a></li>
+            <li><a href="#aboutme">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
 
@@ -27,15 +27,15 @@
             <div class="line-2"></div>
             <div class="line-3"></div>
         </div>
-    </nav>
+    </header>
 
     <section id="hero" class="hero">
         <h1 class="hero__header">UI/UX Designer</h1>
         <h2 class="hero__sub-header">& web developer</h2>
         <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laboriosam. Tenetur, debitis. Consequuntur nihil quasi dolorem, perspiciatis inventore quam quis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus architecto voluptate cumque eaque pariatur provident, rem magnam at impedit quo!</p>
         <div class="hero__buttons">
-            <a href="#" class="btn--blue">View my work</a>
-            <a href="#" class="btn">Contact me</a>   
+            <a href="#" class="btn--blue-gradient">View my work</a>
+            <a href="#" class="btn--blue">Contact me</a>   
         </div>  
     </section>
 
@@ -140,10 +140,25 @@
         </div>
         <div class="aboutme__resume">
             <h4 class="text-center">Download my resume below</h4>
-            <a href="#" class="aboutme__resume-btn btn--blue">Download (.DOCX)</a>
-            <a href="#" class="aboutme__resume-btn btn--orange">Download (.PDF)</a>
+            <a href="#" class="aboutme__resume-btn btn--blue-gradient">Download (.DOCX)</a>
+            <a href="#" class="aboutme__resume-btn btn--orange-gradient">Download (.PDF)</a>
         </div>
     </section>
+    
+    <footer class="footer text-center">
+        <div class="footer__logo">
+            <a href="index.html">
+                <svg width="129" height="127" viewBox="0 0 129 127"><defs><filter id="a" x="12" y="12" width="115" height="115" filterUnits="userSpaceOnUse"><feOffset dx="6" dy="6" input="SourceAlpha"/><feGaussianBlur stdDeviation="5" result="b"/><feFlood flood-opacity="0.2"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter><filter id="c" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse"><feOffset dx="-6" dy="-6" input="SourceAlpha"/><feGaussianBlur stdDeviation="5" result="d"/><feFlood flood-color="#fff" flood-opacity="0.702"/><feComposite operator="in" in2="d"/><feComposite in="SourceGraphic"/></filter><filter id="e" x="65" y="18" width="64" height="101" filterUnits="userSpaceOnUse"><feOffset dy="5" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="f"/><feFlood flood-color="#2a2a2a" flood-opacity="0.239"/><feComposite operator="in" in2="f"/><feComposite in="SourceGraphic"/></filter><filter id="g" x="36" y="18" width="64" height="101" filterUnits="userSpaceOnUse"><feOffset dx="2" dy="5" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="h"/><feFlood flood-color="#2a2a2a" flood-opacity="0.239"/><feComposite operator="in" in2="h"/><feComposite in="SourceGraphic"/></filter><filter id="i" x="3" y="18" width="62" height="101" filterUnits="userSpaceOnUse"><feOffset dx="4" dy="5" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="j"/><feFlood flood-color="#2a2a2a" flood-opacity="0.239"/><feComposite operator="in" in2="j"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(5.669 4.946)"><g transform="translate(15.331 16.054)"><g transform="matrix(1, 0, 0, 1, -21, -21)" filter="url(#a)"><rect width="85" height="85" rx="12" transform="translate(21 21)" fill="#e8ebee"/></g><g transform="matrix(1, 0, 0, 1, -21, -21)" filter="url(#c)"><rect width="85" height="85" rx="12" transform="translate(21 21)" fill="#e8ebee"/></g></g><g transform="matrix(1, 0, 0, 1, -5.67, -4.95)" filter="url(#e)"><text transform="translate(75 87)" fill="#00afef" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="67" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="-0.098em"><tspan x="0" y="0">C</tspan></text></g><g transform="matrix(1, 0, 0, 1, -5.67, -4.95)" filter="url(#g)"><text transform="translate(44 87)" fill="#00afef" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="67" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="-0.098em"><tspan x="0" y="0">K</tspan></text></g><g transform="matrix(1, 0, 0, 1, -5.67, -4.95)" filter="url(#i)"><text transform="translate(9 87)" fill="#00afef" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="67" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="-0.098em"><tspan x="0" y="0">S</tspan></text></g></g></svg>
+            </a>
+        </div>
+        <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mywork.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <p class="footer__copyright">Copyright &copy; 2020 Sean Courtney. All rights reserved</p>
+    </footer>
 
     
     <script src="main.js"></script>

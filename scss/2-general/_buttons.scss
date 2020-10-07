@@ -30,6 +30,26 @@
 	}
 }
 
+.btn--blue-gradient {
+	@include neu-btn--blue( $white-dark, true );
+	color: #fff;
+	background-image: linear-gradient(45deg, $blue 0%, #00cbef 50%, #00e7ef 100%);
+    
+    &:hover {
+		color: $white-dark;
+	}
+}
+
+.btn--orange-gradient {
+	@include neu-btn--orange( $white-dark, true );
+	color: #fff;
+	background-image: linear-gradient(45deg, $orange 0%, #f91b82 100%);
+    
+    &:hover {
+		color: $white-dark;
+	}
+}
+
 .btn--deep {
 	@include neu( $white-dark, true, topleft, false, 5px ); //(color, hover true or false, location(Only have top left), true=in false=out, size of the shadow - default is 2px)
 }
