@@ -72,18 +72,18 @@ input {
   padding: 1em 2em;
   background: transparent;
   margin: 0 1.5em;
-  color: #8192a2;
+  color: #bcc5cd;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 input::placeholder {
-  color: #66788a;
+  color: #bcc5cd;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 input:focus {
   outline: none;
-  color: #515f6d;
+  color: #9fabb8;
 }
 
 [class*="btn"] {
@@ -246,10 +246,10 @@ header .burger .line-2 {
   body {
     overflow-x: hidden;
   }
-  nav {
+  header {
     min-height: 10vh;
   }
-  nav .nav-links {
+  header .nav-links {
     position: absolute;
     z-index: 1;
     right: 0;
@@ -265,22 +265,22 @@ header .burger .line-2 {
     transform: scaleX(0);
     transition: transform 0.3s ease-in;
   }
-  nav .nav-links li {
+  header .nav-links li {
     margin: 2rem 0 0;
     opacity: 0;
   }
-  nav .nav-links li a {
+  header .nav-links li a {
     font-size: 2rem;
   }
-  nav .nav-links .btn {
+  header .nav-links .btn {
     font-size: 1.5rem;
     margin-top: 3rem;
   }
-  nav .burger {
+  header .burger {
     display: block;
     z-index: 1;
   }
-  nav .nav-active {
+  header .nav-active {
     transform: scaleX(1);
   }
 }

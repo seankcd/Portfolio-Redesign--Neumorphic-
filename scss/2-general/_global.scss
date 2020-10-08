@@ -57,16 +57,16 @@ input {
 	padding: 1em 2em;
 	background: transparent;
 	margin: 0 1.5em;
-	color: darken($white-dark, 35);
+	color: darken($white-dark,15);
 	text-shadow: 1px 1px rgba(#fff,.6);
 	
 	&::placeholder {
-		color: darken($white-dark,45);
+		color: darken($white-dark,15);
 		text-shadow: 1px 1px rgba(#fff,.6);
 	}
 	
 	&:focus {
 		outline: none;
-		color: darken($white-dark,55);
+		color: darken($white-dark,25);
 	}
 }
