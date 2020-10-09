@@ -50,15 +50,19 @@ h4 {
 }
 
 //Forms - Test placeholders change this 
-input {
+input, textarea {
     @include neu( $white-dark, false, topcenter, true );
     transition: $trans-neu;
-	border: none;
-	padding: 1em 2em;
+    border: none;
+    display: block;
+    padding: 0.8em 2em;
+    width: 100%;
 	background: transparent;
-	margin: 0 1.5em;
-	color: darken($white-dark,15);
-	text-shadow: 1px 1px rgba(#fff,.6);
+	color: darken($white-dark,55);
+    text-shadow: 1px 1px rgba(#fff,.6);
+    font-family: inherit; 
+    font-size: inherit;
+    resize: none;
 	
 	&::placeholder {
 		color: darken($white-dark,15);
@@ -67,6 +71,6 @@ input {
 	
 	&:focus {
 		outline: none;
-		color: darken($white-dark,25);
+		color: darken($white-dark,75);
 	}
 }

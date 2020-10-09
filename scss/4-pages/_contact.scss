@@ -1,0 +1,70 @@
+.contact-container {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80%;
+}
+
+.contact-info {
+    display: flex;
+    margin-bottom: 5rem;
+
+    &__text {
+        flex: 1;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+        margin-bottom: 2rem;
+
+        a {
+            @include neu( $white-dark, true, topleft, false );
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        img {
+            filter: $shadow-filter;
+        }
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin-bottom: 5rem;
+
+    label {
+        display: inline-block;
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 80%;
+        padding: 1rem 0;
+    }
+}

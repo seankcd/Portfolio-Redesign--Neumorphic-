@@ -6,7 +6,7 @@
     <title>Sean Courtney - UI/UX Designer and Web Developer</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="contact" class="contact">
     <!-- Header/Nav -->
     <header id="navbar">
         <div class="logo">
@@ -29,12 +29,32 @@
         </div>
     </header>
 
-    <section id="contact" class="contact">
-        <form action="">
-            <input type="text" placeholder="Your name">
-            <input type="email" placeholder="Your email">
+    <div class="contact-container">
+        <section class="contact-info">
+            <div class="contact-info__text">
+                <h2>Hello!</h2>
+                <p>If you're looking to get a hold of me for job offers, questions, comments or just to say hello, use the contact form below or send me a message on any of my social media accounts.</p>
+                <p>Hope to here from you soon!</p>
+            </div>
+
+            <div class="contact-info__social">
+                <a href="https://dribbble.com/seankc" target="_blank"><img src="img/dribbble.svg" alt=""></a>
+                <a href="https://instagram.com/seankc.design" target="_blank"><img src="img/ig.svg" alt=""></a>
+                <a href="https://linkedin.com/in/seankcd" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://github.com/seankcd" target="_blank"><img src="img/github.svg" alt=""></a>
+            </div>
+        </section>
+
+        <form class="contact-form">
+            <label for="name">Your Full Name</label>
+            <input id="name" type="text" name="Name" required maxlength="70">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="Email" required maxlength="70">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+            <button class="btn--blue-gradient" type="submit">Submit</button>
         </form>
-    </section>
+    </div>
     
     <footer class="footer text-center">
         <div class="footer__logo">
