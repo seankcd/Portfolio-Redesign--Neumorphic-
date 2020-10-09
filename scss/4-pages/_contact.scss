@@ -154,4 +154,13 @@
             width: 50px;
         }
     }
+
+    .contact-form__top {
+        flex-direction: column;
+        justify-content: center;
+
+        &-group:first-child, :last-child {
+            margin: 0.5rem 0;
+        }
+    }
 }

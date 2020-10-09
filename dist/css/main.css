@@ -611,6 +611,7 @@ header .burger .line-2 {
   }
   .aboutme__resume {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
   .aboutme__resume-btn {
@@ -766,6 +767,13 @@ header .burger .line-2 {
   }
   .contact-info__social img {
     width: 50px;
+  }
+  .contact-form__top {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-form__top-group:first-child, .contact-form__top :last-child {
+    margin: 0.5rem 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
