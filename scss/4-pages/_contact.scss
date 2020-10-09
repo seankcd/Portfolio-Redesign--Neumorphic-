@@ -2,6 +2,22 @@
     margin: 0 auto;
     margin-top: 5rem;
     width: 80%;
+
+    a {
+        cursor: pointer;
+    }
+
+    #success_message {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    #error_message {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .contact-info {
@@ -114,6 +130,10 @@
         &__social {
             margin-bottom: 0;
         }
+    }
+
+    .contact-form button {
+        width: 100%;
     }
 }
 
