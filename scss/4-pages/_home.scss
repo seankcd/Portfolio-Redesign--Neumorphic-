@@ -35,7 +35,7 @@
         margin-bottom: 2em;
     }
 
-    &__buttons a {
+    &__buttons button {
         margin: 0 2rem;
     }
 }
@@ -89,7 +89,7 @@
                 margin-right: 1rem;
             }
 
-            &-buttons a {
+            &-buttons button {
                 margin-right: 1rem;
             }
         }
@@ -179,6 +179,30 @@
 @media screen and (max-width: $resp-tablet) {
     .hero {
         margin-top: 0;
+
+        &__header {
+            font-size: 2.5rem;
+        }
+
+        &__sub-header {
+            font-size: 2.2rem;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__buttons button {
+            margin: 0;
+
+            &:first-child {
+                margin-right: 0.5rem;
+            }
+
+            &:last-child {
+                margin-left: 0.5rem;
+            }
+        }
     }
 
     .mywork {
@@ -202,6 +226,23 @@
                     justify-content: center;
                 }
             }
+        }
+    }
+
+    .aboutme__container {
+        grid-template-columns: 1fr;
+
+        &-skills img {
+            width: 50px;
+        }
+    }
+
+    .aboutme__resume {
+        display: flex;
+        flex-direction: column;
+
+        &-btn {
+            margin-bottom: 1.2rem;
         }
     }
 }

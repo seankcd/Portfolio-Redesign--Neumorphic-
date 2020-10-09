@@ -27,7 +27,7 @@
         flex: 1;
         margin-bottom: 2rem;
 
-        a {
+        button, a {
             @include neu( $white-dark, true, topleft, false );
             width: 70px;
             height: 70px;
@@ -42,6 +42,7 @@
         }
 
         img {
+            width: 50px;
             filter: $shadow-filter;
         }
     }
@@ -51,20 +52,62 @@
     width: 100%;
     margin-bottom: 5rem;
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        &-group {
+            flex-grow: 2;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+
+            &:last-child {
+                margin-left: 1rem;
+            }
+        }
+    }
+
     label {
         display: inline-block;
+        margin-bottom: 0.5rem;
     }
 
-    input {
+    input, textarea {
         margin-bottom: 1rem;
+        -webkit-appearance: none; /* Makes the box shadow work in iOS. Has to be before box-shadow  */
     }
 
-    textarea {
-        margin-bottom: 1rem;
+    &__button {
+        display: flex;
+        justify-content: center;
     }
 
     button {
         width: 80%;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+//
+// Media Queries
+//
+@media screen and (max-width: $resp-phone) {
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+
+        &__text p:last-child {
+            margin-bottom: 2rem;
+        }
+
+        &__social {
+            margin-bottom: 0;
+        }
     }
 }

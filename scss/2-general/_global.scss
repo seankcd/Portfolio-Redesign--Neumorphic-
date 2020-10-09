@@ -40,6 +40,7 @@ h4 {
 
 //
 //Text Utility Classes
+//
 .text-center {
     text-align: center;
 }
@@ -49,13 +50,15 @@ h4 {
     color: $gray;
 }
 
-//Forms - Test placeholders change this 
+//
+//Forms
+//
 input, textarea {
     @include neu( $white-dark, false, topcenter, true );
     transition: $trans-neu;
     border: none;
     display: block;
-    padding: 0.8em 2em;
+    padding: 0.8em 1em;
     width: 100%;
 	background: transparent;
 	color: darken($white-dark,55);
@@ -73,4 +76,13 @@ input, textarea {
 		outline: none;
 		color: darken($white-dark,75);
 	}
+}
+
+//
+// Media Queries
+//
+@media screen and (max-width: $resp-phone) {
+    body {
+        padding: 0 0.8rem;
+    }
 }

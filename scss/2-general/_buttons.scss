@@ -4,9 +4,13 @@
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
+	font-family: $roboto;
+	font-size: 1rem;
+	line-height: 1.6;
+	background: none;
 	cursor: pointer;
 	text-transform: capitalize;
-    padding: 0.7rem 0.7rem;
+    padding: 0.7rem 1.5rem;
 	color: $black-light;
 	border: none;
     

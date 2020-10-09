@@ -46,13 +46,21 @@
         </section>
 
         <form class="contact-form">
-            <label for="name">Your Full Name</label>
-            <input id="name" type="text" name="Name" required maxlength="70">
-            <label for="email">Email Address</label>
-            <input id="email" type="email" name="Email" required maxlength="70">
+            <div class="contact-form__top">
+                <div class="contact-form__top-group">
+                    <label for="name">Your Full Name</label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+                </div>
+                <div class="contact-form__top-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="Email" required maxlength="50">
+                </div>
+            </div>
             <label for="message">Message</label>
             <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-            <button class="btn--blue-gradient" type="submit">Submit</button>
+            <div class="contact-form__button">
+                <button class="btn--blue-gradient" type="submit">Submit</button>
+            </div>
         </form>
     </div>
     

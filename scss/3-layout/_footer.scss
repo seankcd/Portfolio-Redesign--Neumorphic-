@@ -39,3 +39,21 @@
         color: $gray;
     }
 }
+
+//
+// Media Queries
+//
+@media screen and (max-width: $resp-phone) {
+    .footer .footer__links {
+        flex-direction: column;
+        text-align: center;
+
+        li {
+            margin: 0.6rem 0;
+        }
+    }
+
+    .footer .footer__copyright {
+        font-size: 0.7rem;
+    }
+}
