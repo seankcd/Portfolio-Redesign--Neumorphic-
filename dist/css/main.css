@@ -547,7 +547,7 @@ header .burger .line-2 {
   margin: 0 2rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 768px) {
   .hero {
     margin-top: 0;
   }
