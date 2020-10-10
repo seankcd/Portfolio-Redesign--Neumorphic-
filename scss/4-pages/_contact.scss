@@ -138,11 +138,17 @@
 }
 
 @media screen and (max-width: $resp-phone) {
+    .contact-info {
+        align-items: normal;
+    }
+    
     .contact-info__text {
         max-width: 100%;
     }
 
     .contact-info__social {
+            justify-content: space-between;
+
 
         a {
             width: 65px;
