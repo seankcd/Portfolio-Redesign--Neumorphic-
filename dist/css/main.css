@@ -536,10 +536,6 @@ header .burger .line-2 {
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
 }
 
-.aboutme__container-info-social img {
-  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.16));
-}
-
 .aboutme__container-skills h4 {
   margin-bottom: 2rem;
 }
@@ -706,7 +702,6 @@ header .burger .line-2 {
 
 .contact-info__social img {
   width: 50px;
-  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.16));
 }
 
 .contact-form {
