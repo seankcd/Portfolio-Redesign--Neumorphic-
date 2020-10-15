@@ -47,7 +47,8 @@
     <section id="hero" class="hero">
         <h1>404</h1>
         <h1>Not Found</h1>
-        <p>Uh oh, something went missing</p>
+        <p>Uh oh, I can't seem to find that</p>
+        <p><a href="index.html">Click here</a> to go back home</p>
     </section>
     
     <footer class="footer text-center">
