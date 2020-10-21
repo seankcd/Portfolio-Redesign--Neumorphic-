@@ -68,6 +68,22 @@ h4 {
   color: #8A8A8A;
 }
 
+.m-b1 {
+  margin-bottom: 1rem;
+}
+
+.m-b2 {
+  margin-bottom: 2rem;
+}
+
+.m-b6 {
+  margin-bottom: 6rem;
+}
+
+.m-b8 {
+  margin-bottom: 8rem;
+}
+
 input, textarea {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
@@ -795,5 +811,38 @@ header .burger .line-2 {
   .contact-form__top-group:first-child, .contact-form__top :last-child {
     margin: 0.5rem 0;
   }
+}
+
+.intro {
+  display: flex;
+  margin: 6rem 0 6rem 0;
+}
+
+.intro__info {
+  margin-right: 1rem;
+}
+
+.intro__header {
+  margin-bottom: -1rem;
+}
+
+.intro__subheader {
+  margin-bottom: 2rem;
+  color: #8A8A8A;
+}
+
+.intro__text {
+  margin-bottom: 2rem;
+}
+
+.intro__tech {
+  margin-bottom: 2rem;
+}
+
+.intro__img {
+  border-radius: 0.6rem;
+  min-width: 600px;
+  height: 100%;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
