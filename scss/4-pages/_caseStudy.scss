@@ -104,12 +104,23 @@
         justify-content: center;
         margin-right: 2rem;
     }
+}
 
-    &__img {
-        width: 100%;
-        height: auto;
-        border-radius: $border-radius;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+.grid-col1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 15rem 0;
+
+    &__desc {
+        margin-top: 1rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        margin: 2rem 0;
     }
 }
 

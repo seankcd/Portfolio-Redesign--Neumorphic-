@@ -113,6 +113,33 @@ h4 {
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
 }
 
+.img-a {
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.social-cta {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.social-cta a {
+  border-radius: 0.6rem;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-cta a:hover {
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
+}
+
 input, textarea {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
@@ -564,20 +591,6 @@ header .burger .line-2 {
   margin-bottom: 8rem;
 }
 
-.aboutme__container-info-social {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
-
-.aboutme__container-info-social a {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .aboutme__container-skills h4 {
   margin-bottom: 2rem;
 }
@@ -717,33 +730,10 @@ header .burger .line-2 {
 
 .contact-info__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   flex: 1;
-  margin-bottom: 2rem;
-}
-
-.contact-info__social button, .contact-info__social a {
-  border-radius: 0.6rem;
-  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 2rem;
-}
-
-.contact-info__social button:hover, .contact-info__social a:hover {
-  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
-}
-
-.contact-info__social button:last-child, .contact-info__social a:last-child {
-  margin-right: 0;
-}
-
-.contact-info__social img {
-  width: 50px;
+  margin: 0 0 2rem 4rem;
 }
 
 .contact-form {
@@ -805,7 +795,15 @@ header .burger .line-2 {
     margin-bottom: 2rem;
   }
   .contact-info__social {
-    margin-bottom: 0;
+    margin: 0;
+  }
+  .contact-info__social a {
+    width: 65px;
+    height: 65px;
+    margin-right: 1rem;
+  }
+  .contact-info__social img {
+    width: 50px;
   }
   .contact-form button {
     width: 100%;
@@ -818,17 +816,6 @@ header .burger .line-2 {
   }
   .contact-info__text {
     max-width: 100%;
-  }
-  .contact-info__social {
-    justify-content: space-between;
-  }
-  .contact-info__social a {
-    width: 65px;
-    height: 65px;
-    margin-right: 1rem;
-  }
-  .contact-info__social img {
-    width: 50px;
   }
   .contact-form__top {
     flex-direction: column;
@@ -944,10 +931,21 @@ header .burger .line-2 {
   margin-right: 2rem;
 }
 
-.pages__img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.6rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+.grid-col1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 15rem 0;
+}
+
+.grid-col1__desc {
+  margin-top: 1rem;
+}
+
+.grid-col1 p {
+  margin-bottom: 2rem;
+}
+
+.grid-col1 img {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=main.css.map */
