@@ -123,7 +123,6 @@ h4 {
 .social-cta {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
 }
 
 .social-cta a {
@@ -939,6 +938,11 @@ header .burger .line-2 {
 
 .grid-col1__desc {
   margin-top: 1rem;
+}
+
+.grid-col1__desc .social-cta {
+  justify-content: center;
+  gap: 2rem;
 }
 
 .grid-col1 p {

@@ -113,6 +113,11 @@
 
     &__desc {
         margin-top: 1rem;
+
+        .social-cta {
+            justify-content: center;
+            gap: 2rem;
+        }
     }
 
     p {
