@@ -87,7 +87,6 @@
 }
 
 .pages {
-    @include neu( $white-dark, false, topleft, true );
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 10rem;

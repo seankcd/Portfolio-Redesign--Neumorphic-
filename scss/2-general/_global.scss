@@ -66,6 +66,24 @@ h4 {
 
 .m-b8 { margin-bottom: 8rem; }
 
+//
+//Neumorphic Utility Classes
+//
+.neu-in {
+    @include neu( $white-dark, false, topleft, true ); //colour, hover=true or false, direction(doesn't work, always topLeft), in=true out=false
+
+    &--hover {
+        @include neu( $white-dark, true, topleft, true ); 
+    }
+}
+
+.neu-out {
+    @include neu( $white-dark, false, topleft, false ); //colour, hover=true or false, direction(doesn't work, always topLeft), in=true out=false
+
+    &--hover {
+        @include neu( $white-dark, true, topleft, false ); 
+    }
+}
 
 //
 //Forms

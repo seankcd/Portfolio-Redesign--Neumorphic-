@@ -1,5 +1,5 @@
 .box {
-    @include neu( $white-dark, false, topleft, true );
+    @include neu( $white-dark, true, topleft, false ); //colour, hover=true or false, direction(doesn't work, always topLeft), in=true out=false
     width: 200px;
     height: 200px;
     padding: 2rem;
