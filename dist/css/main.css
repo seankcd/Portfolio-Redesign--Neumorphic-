@@ -471,6 +471,11 @@ header .burger .line-2 {
   height: auto;
   border-radius: 0.6rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform .5s;
+}
+
+.mywork__card-img:hover {
+  transform: scale(1.01);
 }
 
 .mywork__card-desc {
@@ -848,49 +853,63 @@ header .burger .line-2 {
   margin-top: 1rem;
 }
 
-.pic-bg1 {
+.pic-bg-full {
   width: 99.5vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin: 0 -50vw 8rem -50vw;
-  background: linear-gradient(rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)), url("../img/sp-bg1.jpg") no-repeat center center/cover fixed;
-  color: #E8EBEE;
 }
 
-.pic-bg1__text {
+.pic-bg-full__container {
   margin: 0 auto;
   max-width: 1300px;
-  display: flex;
-  padding: 6rem 2rem;
+  display: grid;
+  gap: 3rem;
 }
 
-.pic-bg1__goals {
-  margin-right: 1rem;
+.pic-bg-full__container1 {
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 2rem;
 }
 
-.pic-bg1__challenges {
-  margin-left: 1rem;
+.pic-bg-full__container2 {
+  grid-template-columns: 1fr 2fr;
+  padding: 10rem 2rem;
 }
 
-.pic-bg1__header {
+.pic-bg-full__header {
   margin-bottom: 2rem;
 }
 
-.pic-bg1 ul {
+.pic-bg-full__desc {
+  margin-bottom: 1.5rem;
+}
+
+.pic-bg-full ul {
   list-style: inside;
 }
 
-.pic-bg1 li {
+.pic-bg-full li {
   margin-bottom: 1rem;
+}
+
+.pic-bg1 {
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg1.jpg") no-repeat center center/cover fixed;
+  color: #E8EBEE;
+}
+
+.pic-bg2 {
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg2.jpg") no-repeat center center/cover fixed;
+  color: #E8EBEE;
 }
 
 .pages {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 6px #e8ebee, inset -4px -4px 12px rgba(255, 255, 255, 0.6), inset -2px -2px 2px rgba(255, 255, 255, 0.2), inset 4px 4px 6px #cbd2d8;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  margin-bottom: 15rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem;
   padding: 2rem;
 }
 
@@ -908,8 +927,9 @@ header .burger .line-2 {
 }
 
 .pages__img {
-  border-radius: 0.6rem;
-  max-width: 700px;
+  width: 100%;
   height: auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=main.css.map */

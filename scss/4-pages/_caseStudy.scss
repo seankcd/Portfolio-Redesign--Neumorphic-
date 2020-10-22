@@ -33,33 +33,36 @@
     }
 }
 
-.pic-bg1 {
-    width: 99.5vw;
+.pic-bg-full {
+    width: 99.5vw; //browsers display an X-axis scroll bar if you have it at 100vw
     position: relative;
     left: 50%;
     right: 50%;
     margin: 0 -50vw 8rem -50vw;
-    background: linear-gradient(rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)),
-    url('../img/sp-bg1.jpg') no-repeat center center/cover fixed;
-    color: $white-dark;
 
-    &__text {
+    &__container {
         margin: 0 auto;
         max-width: $max-width;
-        display: flex;
-        padding: 6rem 2rem;
-    }
+        display: grid;
+        gap: 3rem;
 
-    &__goals {
-        margin-right: 1rem;
-    }
+        &1 {
+            grid-template-columns: 1fr 1fr;
+            padding: 8rem 2rem;
+        }
 
-    &__challenges {
-        margin-left: 1rem;
+        &2 {
+            grid-template-columns: 1fr 2fr;
+            padding: 10rem 2rem;
+        }
     }
 
     &__header {
         margin-bottom: 2rem;
+    }
+
+    &__desc {
+        margin-bottom: 1.5rem;
     }
 
     ul {
@@ -71,11 +74,23 @@
     }
 }
 
+.pic-bg1 {
+    background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)),
+    url('../img/sp-bg1.jpg') no-repeat center center/cover fixed;
+    color: $white-dark;
+}
+
+.pic-bg2 {
+    background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)),
+    url('../img/sp-bg2.jpg') no-repeat center center/cover fixed;
+    color: $white-dark;
+}
+
 .pages {
     @include neu( $white-dark, false, topleft, true );
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    margin-bottom: 15rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
     padding: 2rem;
 
     &-right &__text {
@@ -92,9 +107,10 @@
     }
 
     &__img {
-        border-radius: $border-radius;
-        max-width: 700px;
+        width: 100%;
         height: auto;
+        border-radius: $border-radius;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
     }
 }
 
