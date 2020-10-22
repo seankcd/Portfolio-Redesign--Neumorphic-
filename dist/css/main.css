@@ -951,7 +951,7 @@ header .burger .line-2 {
 
 .grid-col1__desc .social-cta {
   justify-content: center;
-  gap: 2rem;
+  margin-right: 1rem;
 }
 
 .grid-col1 p {
