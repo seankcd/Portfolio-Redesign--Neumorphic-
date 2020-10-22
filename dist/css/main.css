@@ -829,6 +829,16 @@ header .burger .line-2 {
   }
 }
 
+.pic-bg-sp1 {
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg1.jpg") no-repeat center center/cover fixed;
+  color: #E8EBEE;
+}
+
+.pic-bg-sp2 {
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg2.jpg") no-repeat center center/cover fixed;
+  color: #E8EBEE;
+}
+
 .intro {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -899,16 +909,6 @@ header .burger .line-2 {
 
 .pic-bg-full li {
   margin-bottom: 1rem;
-}
-
-.pic-bg1 {
-  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg1.jpg") no-repeat center center/cover fixed;
-  color: #E8EBEE;
-}
-
-.pic-bg2 {
-  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg2.jpg") no-repeat center center/cover fixed;
-  color: #E8EBEE;
 }
 
 .pages {
