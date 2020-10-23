@@ -942,6 +942,10 @@ header .burger .line-2 {
   padding: 2rem;
 }
 
+.pages p {
+  margin-bottom: 1rem;
+}
+
 .pages .img-desk {
   display: block;
 }
