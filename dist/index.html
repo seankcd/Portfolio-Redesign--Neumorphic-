@@ -13,8 +13,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello, I'm Sean Courtney and this is my UI/UX design and development portfolio. Here you can find my latest work, my resume, social media links and a contact form to get ahold of me.">
-    <title>Sean Courtney - UI/UX Designer and Web Developer</title>
+    <meta name="description" content="Hello, I'm Sean Courtney, a UI/UX designer and web developer based out of Vancouver, BC and welcome to my portfolio where you can find my latest work, my resume, social media links and a contact form to get ahold of me.">
+    <title>Sean Courtney - UI/UX Designer and Web Developer Portfolio</title>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
@@ -29,7 +29,7 @@
 <body>
 
     <!-- Header/Nav -->
-    <header id="navbar">
+    <header id="navbar" role="navigation" aria-label="main navigation">
         <div class="logo">
             <a href="index.html">
                 <!-- SVG Logo -->
@@ -44,7 +44,7 @@
         </ul>
 
         <!-- Burger Menu -->
-        <div class="burger">
+        <div class="burger" aria-label="main menu">
             <div class="line-1"></div>
             <div class="line-2"></div>
             <div class="line-3"></div>
@@ -52,10 +52,10 @@
     </header>
 
     <!-- Hero/Landing -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-label="hero section">
         <h1 class="hero__header neu-in">UI/UX Designer</h1>
         <h2 class="hero__sub-header">& web developer</h2>
-        <p class="hero__text">Hello, I'm Sean Courtney and welcome to my UI/UX design and development portfolio. Here you can find my latest work, my resume, social media links and a contact form to get ahold of me.</p>
+        <p class="hero__text">Hello, I'm Sean Courtney, a UI/UX designer and web developer based out of Vancouver, BC and welcome to my portfolio where you can view my latest work, learn more about me, or contact me for more information.</p>
         <div class="hero__buttons">
             <a href="#mywork"><button class="btn--blue-gradient">View my work</button></a>
             <a href="contact.html"><button class="btn--blue">Contact me</button></a>
@@ -63,10 +63,10 @@
     </section>
 
     <!-- My Work -->
-    <section id="mywork" class="mywork">
+    <section id="mywork" class="mywork" aria-label="my work section">
 
         <div class="mywork__card neu-in">
-            <a href="maynooth-casestudy.html"><img src="img/maynooth.png" alt="" class="mywork__card-img"></a>
+            <a href="maynooth-casestudy.html"><img src="img/maynooth.png" alt="Maynooth UI/UX high fidelity prototype - Home page" class="mywork__card-img"></a>
             <div class="mywork__card-desc">
                 <h3 class="mywork__card-desc-header">Maynooth</h3>
                 <p>My main focus for this project was simplicity, which during my research I found to be missing from the majority of competitor's websites. Things like newsletters and sale notifications tend to be very in-your-face and distracting, causing the guest to become confused, and frustrated. With that in mind, I went about creating a very simple, yet precise shopping experience.</p>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="mywork__card neu-in">
-            <a href="soundpoint-casestudy.html"><img src="img/soundpoint.png" alt="" class="mywork__card-img"></a>
+            <a href="soundpoint-casestudy.html"><img src="img/soundpoint.png" alt="SoundPoint UI/UX high fidelity prototype - Home page" class="mywork__card-img"></a>
             <div class="mywork__card-desc">
                 <h3 class="mywork__card-desc-header">SoundPoint</h3>
                 <p>A concept website I designed to mimic other services similar to Spotify. I was going for a minimalistic, no scrolling site with limited functionality. Some of the issues that arose were containing all the information in a well thought out way, especially when it came to the support page on mobile. If I were to go back and do it again I would allow scrolling, particularly on mobile and I'd add more relevant information on the Discover page. I'm currently working on a proper case study for this project</p>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="mywork__card neu-in">
-            <img src="img/portfoliov2.png" alt="" class="mywork__card-img">
+            <img src="img/portfoliov2.png" alt="Sean Courtney's new UI/UX design and development protfolio" class="mywork__card-img">
             <div class="mywork__card-desc">
                 <h3 class="mywork__card-desc-header">Portfolio v2.0</h3>
                 <div class="mywork__card-desc-text">
@@ -127,7 +127,7 @@
         </div>
 
         <div class="mywork__card neu-in">
-            <img src="img/portfoliov1.jpg" alt="" class="mywork__card-img">
+            <img src="img/portfoliov1.jpg" alt="Sean Courtney's old UI/UX design and development protfolio" class="mywork__card-img">
             <div class="mywork__card-desc">
                 <h3 class="mywork__card-desc-header">Portfolio v1.0</h3>
                 <div class="mywork__card-desc-text">
@@ -151,15 +151,15 @@
     </section>
 
     <!-- About Me -->
-    <section id="aboutme" class="aboutme">
-        <img src="img/me.png" alt="A picture of me" class="aboutme__me neu-out">
+    <section id="aboutme" class="aboutme" aria-label="about me section">
+        <img src="img/me.png" alt="A picture of me, Sean Courtney" class="aboutme__me neu-out">
         <div class="aboutme__container">
             <div class="aboutme__container-info">
                 <div class="m-b2 social-cta">
-                    <a href="https://dribbble.com/seankc" target="_blank"><img src="img/dribbble.svg" alt=""></a>
-                    <a href="https://instagram.com/seankc.design" target="_blank"><img src="img/ig.svg" alt=""></a>
-                    <a href="https://linkedin.com/in/seankcd" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-                    <a href="https://github.com/seankcd" target="_blank"><img src="img/github.svg" alt=""></a>
+                    <a href="https://dribbble.com/seankc" target="_blank"><img src="img/dribbble.svg" alt="Dribbble Logo"></a>
+                    <a href="https://instagram.com/seankc.design" target="_blank"><img src="img/ig.svg" alt="Instagram Logo"></a>
+                    <a href="https://linkedin.com/in/seankcd" target="_blank"><img src="img/linkedin.svg" alt="Linkedin Logo"></a>
+                    <a href="https://github.com/seankcd" target="_blank"><img src="img/github.svg" alt="GitHub Logo"></a>
                 </div>
                 <p class="aboutme__container-info-text">
                     Hello! My name is Sean Courtney and I'm a UI/UX designer and web developer based out of Vancouver, BC who loves hockey, long walks, and mountain biking. My interest in design and development started at a young age and motivated me to design, develop and administrate multiple projects ranging from gaming news sites, to forums, to web hosting companies. I have over 6 years of management experience which has allowed me to grow not only as an employee and co-worker but also as a person. It's also given me valuable experience with training and collaborating with small, medium and large groups.
@@ -169,48 +169,48 @@
                 <h4>Languages</h4>
                 <div class="aboutme__container-skills-languages text-center text-small">
                     <div class="aboutme__container-skills-languages-img">
-                        <img src="img/html.svg" alt="">
+                        <img src="img/html.svg" alt="HTML5 Logo">
                         <p>HTML5</p>
                     </div>
                     <div class="aboutme__container-skills-languages-img">
-                        <img src="img/css3.svg" alt="">
+                        <img src="img/css3.svg" alt="CSS3 Logo">
                         <p>CSS3</p>
                     </div>
                     <div class="aboutme__container-skills-languages-img">
-                        <img src="img/sass.svg" alt="">
+                        <img src="img/sass.svg" alt="Sass Logo">
                         <p>Sass</p>
                     </div>
                     <div class="aboutme__container-skills-languages-img">
-                        <img src="img/javascript.svg" alt="">
+                        <img src="img/javascript.svg" alt="JavaScript Logo">
                         <p>JavaScript</p>
                     </div>
                     <div class="aboutme__container-skills-languages-img">
-                        <img src="img/react.svg" alt="">
+                        <img src="img/react.svg" alt="React Logo">
                         <p>React</p>
                     </div>
                 </div>
                 <h4>Software</h4>
                 <div class="aboutme__container-skills-software text-center text-small">
                     <div class="aboutme__container-skills-software-img">
-                        <img src="img/figma.svg" alt="">
+                        <img src="img/figma.svg" alt="Figma Logo">
                         <p>Figma</p>
                     </div>
                     <div class="aboutme__container-skills-software-img">
-                        <img src="img/xd.svg" alt="">
+                        <img src="img/xd.svg" alt="Adobe XD Logo">
                         <p>Adobe XD</p>
                     </div>
                     <div class="aboutme__container-skills-software-img">
-                        <img src="img/ps.svg" alt="">
+                        <img src="img/ps.svg" alt="Adobe Photoshop Logo">
                         <p>Adobe Photoshop</p>
                     </div>
                     <div class="aboutme__container-skills-software-img">
-                        <img src="img/vscode.svg" alt="">
+                        <img src="img/vscode.svg" alt="Visual Studio Code Logo">
                         <p>Visual Studio Code</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="aboutme__resume">
+        <div class="aboutme__resume" aria-label="download my resume">
             <h4 class="text-center">Download my resume below</h4>
             <a href="seanc-resume.docx"><button class="aboutme__resume-btn btn--blue-gradient">Download (.DOCX)</button></a>
             <a href="seanc-resume.pdf"><button class="aboutme__resume-btn btn--orange-gradient">Download (.PDF)</button></a>
@@ -230,7 +230,7 @@
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
-        <p class="footer__copyright">Copyright &copy; 2020 Sean Courtney. All rights reserved</p>
+        <p class="footer__copyright" role="contentinfo" aria-label="coppyright info">Copyright &copy; 2020 Sean Courtney. All rights reserved</p>
     </footer>
 
     <!-- Scripts -->
