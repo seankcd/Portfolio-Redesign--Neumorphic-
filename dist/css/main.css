@@ -981,9 +981,9 @@ header .burger .line-2 {
   margin-top: 1rem;
 }
 
-.grid-col1__desc .social-cta {
+.grid-col1__desc .social-cta a {
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .grid-col1 p {
