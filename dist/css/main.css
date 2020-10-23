@@ -839,6 +839,16 @@ header .burger .line-2 {
   color: #E8EBEE;
 }
 
+.pic-bg-m1 {
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/m-bg1.jpg") no-repeat center center/cover fixed;
+  color: #E8EBEE;
+}
+
+.pic-bg-m2 {
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/m-bg2.jpg") no-repeat center center/cover fixed;
+  color: #E8EBEE;
+}
+
 .intro {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -850,7 +860,7 @@ header .burger .line-2 {
 }
 
 .intro__header {
-  margin-bottom: -1rem;
+  margin-bottom: -0.5rem;
 }
 
 .intro__subheader {
@@ -864,6 +874,10 @@ header .burger .line-2 {
 
 .intro__tech {
   margin-bottom: 2rem;
+}
+
+.intro__tech p {
+  margin-bottom: 0.5rem;
 }
 
 .intro__img {
