@@ -830,22 +830,22 @@ header .burger .line-2 {
 }
 
 .pic-bg-sp1 {
-  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg1.jpg") no-repeat center center/cover fixed;
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg1.png") no-repeat center center/cover fixed;
   color: #E8EBEE;
 }
 
 .pic-bg-sp2 {
-  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg2.jpg") no-repeat center center/cover fixed;
+  background: linear-gradient(rgba(41, 41, 41, 0.92), rgba(41, 41, 41, 0.92)), url("../img/sp-bg2.png") no-repeat center center/cover fixed;
   color: #E8EBEE;
 }
 
 .pic-bg-m1 {
-  background: linear-gradient(rgba(41, 41, 41, 0.85), rgba(41, 41, 41, 0.85)), url("../img/m-bg1.jpg") no-repeat center center/cover fixed;
+  background: linear-gradient(rgba(41, 41, 41, 0.85), rgba(41, 41, 41, 0.85)), url("../img/m-bg1.png") no-repeat center center/cover fixed;
   color: #E8EBEE;
 }
 
 .pic-bg-m2 {
-  background: linear-gradient(rgba(41, 41, 41, 0.85), rgba(41, 41, 41, 0.85)), url("../img/m-bg2.jpg") no-repeat center center/cover fixed;
+  background: linear-gradient(rgba(41, 41, 41, 0.85), rgba(41, 41, 41, 0.85)), url("../img/m-bg2.png") no-repeat center center/cover fixed;
   color: #E8EBEE;
 }
 
