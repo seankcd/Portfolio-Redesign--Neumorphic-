@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://seankc.design/</loc>
+  <lastmod>2020-10-29T02:50:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://seankc.design/index.html</loc>
+  <lastmod>2020-10-29T02:50:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seankc.design/contact.html</loc>
+  <lastmod>2020-10-29T02:45:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seankc.design/maynooth-casestudy.html</loc>
+  <lastmod>2020-10-23T04:16:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seankc.design/soundpoint-casestudy.html</loc>
+  <lastmod>2020-10-23T04:17:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seankc.design/seanc-resume.docx</loc>
+  <lastmod>2020-09-17T23:55:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seankc.design/seanc-resume.pdf</loc>
+  <lastmod>2020-09-18T00:39:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
