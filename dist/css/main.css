@@ -507,6 +507,7 @@ header .burger .line-2 {
   max-width: 50%;
   text-align: center;
   margin-bottom: 2em;
+  opacity: 0.8;
 }
 
 .hero__buttons button {
