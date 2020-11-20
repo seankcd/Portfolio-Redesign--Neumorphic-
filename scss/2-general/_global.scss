@@ -44,6 +44,12 @@ h4 {
 }
 
 //
+//Misc. Utility Classes
+//
+.opacity-mid {
+    opacity: $opacity-mid;
+}
+//
 //Text Utility Classes
 //
 .text-center {
@@ -106,7 +112,7 @@ h4 {
 
     a {
         @include neu( $white-dark, true, topleft, false );
-        width: 70px;
+        min-width: 70px;
         height: 70px;
         display: flex;
         align-items: center;

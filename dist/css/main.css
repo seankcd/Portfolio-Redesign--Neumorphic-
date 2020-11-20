@@ -60,6 +60,10 @@ h4 {
   font-size: 1.2rem;
 }
 
+.opacity-mid {
+  opacity: 0.8;
+}
+
 .text-center {
   text-align: center;
 }
@@ -132,7 +136,7 @@ h4 {
 .social-cta a {
   border-radius: 0.6rem;
   box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.7), 4px 4px 6px #c5ccd4, inset -4px -4px 12px rgba(255, 255, 255, 0.1), inset 4px 4px 12px #e8ebee;
-  width: 70px;
+  min-width: 70px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -266,10 +270,6 @@ input:focus, textarea:focus {
 
 .btn--deep:hover {
   box-shadow: -10px -10px 25px rgba(255, 255, 255, 0.2), 10px 10px 15px #e8ebee, inset -10px -10px 30px rgba(255, 255, 255, 0.6), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 15px #cbd2d8;
-}
-
-.mywork {
-  margin-bottom: 10rem;
 }
 
 .mywork__card {
@@ -608,6 +608,10 @@ header .burger .line-2 {
   margin: 0 2rem;
 }
 
+.mywork-home {
+  margin-bottom: 7rem;
+}
+
 .aboutme {
   display: flex;
   flex-direction: column;
@@ -830,6 +834,24 @@ header .burger .line-2 {
   .contact-form__top-group:first-child, .contact-form__top :last-child {
     margin: 0.5rem 0;
   }
+}
+
+.mywork {
+  margin: 6rem 0 7rem;
+}
+
+.mywork p {
+  margin-bottom: 1rem;
+}
+
+.mywork .social-cta {
+  width: 50%;
+  margin-bottom: 6rem;
+  justify-content: flex-start;
+}
+
+.mywork .social-cta a {
+  margin-right: 2rem;
 }
 
 .pic-bg-sp1 {
