@@ -31,70 +31,6 @@
 }
 
 //
-//My Work
-//
-.mywork {
-    margin-bottom: 10rem;
-
-    &__card {
-        padding: 2rem;
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        margin-bottom: 4rem;
-
-        &-img {
-            width: 100%;
-            height: auto;
-            border-radius: $border-radius;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-            transition: transform .5s;
-
-            &:hover {
-                transform: scale(1.01);
-            }
-        }
-
-        &-desc {
-            margin-left: 2rem;
-
-            &-header {
-                margin: -0.8rem 0 0.5rem 0;
-            }
-
-            p {
-                margin-bottom: 1rem;
-            }
-
-            p:last-child {
-                margin-bottom: 2rem;
-            }
-
-            &-tech {
-                margin-bottom: 2rem;
-            }
-
-            &-tech p {
-                font-size: 0.8rem;
-                font-weight: bold;
-                color: $gray;
-                margin-bottom: 0.2rem;
-            }
-
-            &-icon {
-                width: 40px;
-                height: auto;
-                filter: $shadow-filter;
-                margin-right: 1rem;
-            }
-
-            &-buttons a {
-                margin-right: 1rem;
-            }
-        }
-    }
-}
-
-//
 //About Me
 //
 .aboutme {
@@ -184,37 +120,6 @@
         }
     }
 
-    .mywork {
-
-        &__card {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            padding: 0;
-
-            &-img {
-                margin-bottom: 2rem;
-                border-radius: 0.6rem 0.6rem 0 0;
-            }
-
-            &-desc {
-                margin: 0 2rem;
-
-                &-buttons {
-                    margin-bottom: 2rem;
-                    display: flex;
-
-                    & a:first-child {
-                        margin-right: 0.5rem;
-                    }
-
-                    & a:last-child {
-                        margin-left: 0.5rem;
-                    }
-                }
-            }
-        }
-    }
-
     .aboutme__container {
         grid-template-columns: 1fr;
 
@@ -230,16 +135,6 @@
 
         &-btn {
             margin-bottom: 1.2rem;
-        }
-    }
-}
-
-@media screen and (max-width: $resp-phone) {
-    .mywork__card-desc-buttons {
-        justify-content: center;
-
-        & a {
-            margin-right: 0;
         }
     }
 }
