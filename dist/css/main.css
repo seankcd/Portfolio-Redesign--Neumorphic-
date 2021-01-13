@@ -612,6 +612,16 @@ header .burger .line-2 {
   margin-bottom: 7rem;
 }
 
+.mywork-home .mywork__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.mywork-home .mywork__header a {
+  font-size: 1.3rem;
+}
+
 .aboutme {
   display: flex;
   flex-direction: column;
@@ -846,7 +856,7 @@ header .burger .line-2 {
 
 .mywork .social-cta {
   width: 50%;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   justify-content: flex-start;
 }
 
@@ -886,7 +896,7 @@ header .burger .line-2 {
 }
 
 .intro__info {
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .intro__header {

@@ -1,4 +1,5 @@
 /Backups
+/dist/test
 /dist/src
 /dist/vendor
 /dist/example.html

@@ -35,6 +35,16 @@
 //
 .mywork-home {
     margin-bottom: 7rem;
+
+    .mywork__header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3em;
+
+        a {
+            font-size: 1.3rem;
+        }
+    }
 }
 
 //
